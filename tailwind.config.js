@@ -14,5 +14,24 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        carDoctorTheme: {
+           ...require("daisyui/src/theming/themes")["light"],
+          "primary": "#FF3811",
+          ".btn-primary": {
+            "color": "#fff"
+          },
+          ".btn-primary.btn-primary:hover": {
+            "color": "#fff"
+          },
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
+  },
+  
 };
