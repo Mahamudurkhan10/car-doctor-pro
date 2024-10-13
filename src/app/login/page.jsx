@@ -1,13 +1,15 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import {React} from 'react';
 import { signIn } from "next-auth/react"; // Corrected the import
 
 import { useRouter } from 'next/navigation';
 import Social from '@/Components/Shared/Social';
 
-const Page = () => { // Renamed the component to 'Page'
+const Page = () => {
+     // Renamed the component to 'Page'
+     
      const router = useRouter()
      const handleLogin = async (e) => {
           e.preventDefault();
@@ -51,7 +53,7 @@ const Page = () => { // Renamed the component to 'Page'
                               <div >
                                    <Social/>
                               </div>
-                              <h1 className='mt-6'>Don't have an account? <Link href={'/singup'} className='text-xl text-primary'>Sign Up</Link></h1>
+                              <h1 className='mt-6'>Don not have an account? <Link href={'/singup'} className='text-xl text-primary'>Sign Up</Link></h1>
                          </div>
                     </div>
                </div>
